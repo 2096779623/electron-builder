@@ -259,14 +259,14 @@ export default class SnapTarget extends Target {
 function archNameToTriplet(arch: Arch): string {
   switch (arch) {
     case Arch.x64:
-      return "x86_64-linux-gnu"
+      return "x86_64-linux-android"
     case Arch.ia32:
-      return "i386-linux-gnu"
+      return "i386-linux-android"
     case Arch.armv7l:
       // noinspection SpellCheckingInspection
-      return "arm-linux-gnueabihf"
+      return "arm-linux-androideabi"
     case Arch.arm64:
-      return "aarch64-linux-gnu"
+      return "aarch64-linux-android"
 
     default:
       throw new Error(`Unsupported arch ${arch}`)
